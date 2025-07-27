@@ -1,10 +1,10 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-from backend.app.services.instagram import (
+from app.services.instagram import (
     get_instagram_post,
     analyze_image_with_mistral,
 )
-from backend.app.services.moderation import check_product_moderation
+from app.services.moderation import check_product_moderation
 
 router = APIRouter(prefix="/social", tags=["social"])
 

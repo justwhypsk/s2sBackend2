@@ -1,10 +1,10 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
 from bson import ObjectId
-from backend.app.db.crud.product import add_product, get_all_products, get_product_by_id, update_product, delete_product
-from backend.app.db.models.product import AddProduct, GetProduct
-from backend.app.services.validation import check_product_details
-from backend.app.services.moderation import check_product_moderation
+from app.db.crud.product import add_product, get_all_products, get_product_by_id, update_product, delete_product
+from app.db.models.product import AddProduct, GetProduct
+from app.services.validation import check_product_details
+from app.services.moderation import check_product_moderation
 
 router = APIRouter(prefix="/api", tags=["Product"])
 

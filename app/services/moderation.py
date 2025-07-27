@@ -1,5 +1,5 @@
 import requests
-from backend.app.core.config import settings
+from app.core.config import settings
 
 mistral_api_key = settings.MISTRAL_API_KEY
 headers = {

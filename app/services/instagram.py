@@ -1,6 +1,6 @@
 import instaloader
-from backend.app.services.cloudinary import upload_to_cloudinary
-from backend.app.core.config import settings
+from app.services.cloudinary import upload_to_cloudinary
+from app.core.config import settings
 import os
 import shutil
 import requests

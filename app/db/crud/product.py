@@ -1,7 +1,7 @@
 from bson import ObjectId
 from ..models.product import AddProduct, GetProduct
 from ..mongo import get_collection
-from backend.app.services.cloudinary import upload_to_cloudinary
+from app.services.cloudinary import upload_to_cloudinary
 
 # Get the products collection
 collection = get_collection("products")
